@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio terminal - Juan Bisaguirre</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+      <div class="header"> bash - Juan Bisaguirre Portfolio</div>
+      <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Successful login - <span class="error" id="date"></span></div>
+          <div class="title">Mi Portfolio</div>
+          Hola! Bienvenidos a mi portfolio, para ver la lista de commandos ingresá <span class="command">help</span>
+        </section>
+        <div class="prompt">
+          <span class="command">$</span> <span class="title">gestuser</span> <input id="promtInput"/>
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+      <span class="command">$</span> <span class="title">gestuser</span> <span class="promtCloneInput"></span>
+      <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Podes ingresar cualquiera de estos comandos: </div>
+      <div class="indent">
+        <div>
+          <span class="command">about</span>:
+          <div class="indent">Sobre mi</div> 
+        </div>
+        <div>
+          <span class="command">social</span>:
+          <div class="indent">Listado de mis redes sociales</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Las herramientas con las que trabajo</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">Todo sobre mi formación</div> 
+        </div>
+        <div>
+          <span class="command">experience</span>:
+          <div class="indent">Donde trabajé hasta ahora</div> 
+        </div>
+        <div>
+          <span class="command">projects</span>:
+          <div class="indent">Un listado de mis proyectos</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Borrar el historial de la terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">Proyectos: </div>
+      <div class="indent">
+        <span class="title">App Clima </span> - <a href="https://github.com/juanbisaguirre/app_clima" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Login Page Moderno </span> - <a href="https://github.com/juanbisaguirre/loginPage" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">App de Chat </span> - <a href="https://github.com/juanbisaguirre/app_chat_websockets" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Api CRUD </span> - <a href="https://github.com/juanbisaguirre/1eraAPI" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Portfolio UTN </span> - <a href="https://github.com/juanbisaguirre/portfolioUTN" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+
+    </div>
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Skills: </div>
+      <div class="indent">
+        <div>
+          <span class="command">Programacion</span>:
+          <div class="indent">
+            <span class="title">JavaScript</span>
+            <span class="title">Python (Basico)</span>
+            <span class="title">CSS</span>
+            <span class="title">HTML</span>
+            <span class="title">GIT</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Otros Conocimientos</span>:
+          <div class="indent">
+            <span class="title">WordPress</span>
+            <span class="title">Microelectronica</span>
+            <span class="title">Ciberseguridad</span>
+            <span class="title">Canva</Canvas></span>
+            <span class="title">Shopify</span>
+            <span class="title">Tienda Nube</span>
+            <span class="title">Posicionamiento CEO</span>
+            <span class="title">Data Analytics(Basico)</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Idiomas</span>:
+          <div class="indent">
+            <span class="title">Español</span>
+            <span class="title">Ingles</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mi: </div>
+        <div class="indent">
+          Hola! mi nombre es <span class="command">Juan A. Bisaguirre</span>
+          Soy desarrollador Web Full-Stack.  Actualmente estoy realizando la tecnicatura universitaria en Desarrollo de Software. 
+          Soy una persona proactiva, responsable y con gran capacidad de adaptación, con una gran gran pasión por la tecnología, la computación y todo lo referido a sistemas informáticos. 
+          Tengo competencia profesional avanzada en inglés.  
+          Trabajo diariamente en mejorar mis habilidades blandas y mi autogestión, con el objetivo de desarrollarme personal y profesionalmente en el mundo de la programación y la ciberseguridad. 
+        </div> 
+    </div>
+
+    <div class="hidden" id="experience">
+      <div class="sectionTitle">Experiencia: </div>
+      <div class="indent">
+        <span class="title">FullStack DEV - Bisatech</span> - <span class="command">Septiembre 2020 - Hoy</span>
+        <div class="indent">
+          Servicio de desarrollo web. Tecnologías JavaScript,HTML, CSS y WordPress.
+          Posicionamiento CEO.
+          Consultorías y asesorías sobre ciberseguridad,tecnologías varias, IA, desarrollo Web.
+          Asesorías comerciales para comercio en línea. 
+          Reparación de dispositivos móviles y computadoras anivel hardware y software.
+        </div> 
+      </div>
+    </div>
+
+    <div class="hidden" id="social">
+      <div class="sectionTitle">Redes sociales: </div>
+      <div class="indent">
+        <span class="title">GitHub </span> - <a href="https://github.com/juanbisaguirre" target="_blank"><span class="command">Link a GitHub</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn </span> - <a href="https://www.linkedin.com/in/juan-anibal-bisaguirre-livellara/" target="_blank"><span class="command">Link a LinkedIn</span> </a>
+      </div>
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Formación: </div>
+      <div class="indent">
+        <span class="title">Tecnico Universitario en Desarrollo de Software - Universidad Tecnologica Nacional</span> <span class="command">Finalizo 2025</span>
+        <div class="indent">
+          Estoy estudiando la Tecnicatura universitaria en desarrollo de software.
+          Finalizo en noviembre del 2025
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Curso Fullstack-CoderHouse</span> <span class="command">Finalizado 11/2023</span>
+        <div class="indent">
+          Desarrollador Full-Stack, JavaScript, NodeJs, ReactJs, MongoDB.
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Curso Fullstack -Egg Academy</span> <span class="command">Finalizado 04/2022</span>
+        <div class="indent">
+          Desarrollador Java Full-Stack, Springboot, MySQL, HTML, Boostrap.
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Data Science - Fundacion Santisima Trinidad</span> <span class="command">Finalizado 2022</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+        </div> 
+      </div>
+    </div>
+</body>
+</html>
